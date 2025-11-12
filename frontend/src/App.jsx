@@ -7,25 +7,29 @@ import Login from "./pages/Login";
 import Register from "./pages/Register";
 import Profile from "./pages/Profile.jsx";
 import Volunteer from "./pages/Volunteer.jsx";
+import Admin from "./pages/Admin";
 
 
-function App() {
+export default function App() {
   return (
     <BrowserRouter>
-      <Navbar />
-      <main className="min-h-screen bg-orange-50">
-        <Routes>
-          <Route path="/" element={<Home />} />
-          <Route path="/animals" element={<Animals />} />
-          <Route path="/login" element={<Login />} />
-          <Route path="/register" element={<Register />} />
-          <Route path="/profile" element={<Profile />} />
-          <Route path="/volunteer" element={<Volunteer />} />
-        </Routes>
-      </main>
-      <Footer />
+      <div className="flex flex-col min-h-screen">
+        <Navbar />
+
+        <main className="flex-grow">
+          <Routes>
+            <Route path="/" element={<Home />} />
+            <Route path="/animals" element={<Animals />} />
+            <Route path="/login" element={<Login />} />
+            <Route path="/register" element={<Register />} />
+            <Route path="/profile" element={<Profile />} />
+            <Route path="/volunteer" element={<Volunteer />} />
+            <Route path="/admin" element={<Admin />} />
+          </Routes>
+        </main>
+
+        <Footer />
+      </div>
     </BrowserRouter>
   );
 }
-
-export default App;
