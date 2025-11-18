@@ -1,9 +1,11 @@
-const mongoose = require('mongoose');
+
+import mongoose from 'mongoose';
 
 const VolunteerSchema = new mongoose.Schema({
-user: { type: mongoose.Schema.Types.ObjectId, ref: 'User' },
-hours: { type: Number, default: 0 },
-tasks: [{ date: Date, description: String }]
+	user: { type: mongoose.Schema.Types.ObjectId, ref: 'User' },
+	hours: { type: Number, default: 0 },
+	tasks: [{ date: Date, description: String }]
 }, { timestamps: true });
 
-module.exports = mongoose.model('Volunteer', VolunteerSchema);
+const Volunteer = mongoose.model('Volunteer', VolunteerSchema);
+export default Volunteer;

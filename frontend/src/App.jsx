@@ -13,7 +13,7 @@ import Admin from "./pages/Admin";
 export default function App() {
   return (
     <BrowserRouter>
-      <div className="flex flex-col min-h-screen">
+      <div className="flex flex-col min-h-screen bg-blue-100">
         <Navbar />
 
         <main className="flex-grow">
