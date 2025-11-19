@@ -33,7 +33,7 @@ export default function Home() {
         <div className="grid grid-cols-3 gap-12">
           {/* Adopt */}
           <div className="bg-white p-12 rounded-3xl shadow-lg hover:shadow-2xl transition transform hover:-translate-y-2">
-            <div className="text-8xl mb-6">🏡</div>
+            <div className="text-8xl mb-6">🏠</div>
             <h3 className="text-3xl font-bold text-blue-600 mb-4">Adopt</h3>
             <p className="text-gray-700 text-lg leading-relaxed">
               Find your perfect pet from our collection of animals waiting for a loving home.
@@ -45,32 +45,18 @@ export default function Home() {
             <div className="text-8xl mb-6">🤝</div>
             <h3 className="text-3xl font-bold text-blue-600 mb-4">Volunteer</h3>
             <p className="text-gray-700 text-lg leading-relaxed">
-              Make a difference by helping care for animals and supporting our mission.
+              Join our team and make a difference in the lives of animals in need.
             </p>
           </div>
 
           {/* Donate */}
           <div className="bg-white p-12 rounded-3xl shadow-lg hover:shadow-2xl transition transform hover:-translate-y-2">
-            <div className="text-8xl mb-6">💝</div>
+            <div className="text-8xl mb-6">💖</div>
             <h3 className="text-3xl font-bold text-blue-600 mb-4">Donate</h3>
             <p className="text-gray-700 text-lg leading-relaxed">
-              Support our cause and help provide better care for animals in need.
+              Support our mission by donating to help provide food, shelter, and care.
             </p>
           </div>
-        </div>
-      </section>
-
-      {/* CTA Section */}
-      <section className="bg-blue-600 text-white py-24 mt-16">
-        <div className="max-w-7xl mx-auto px-8 text-center">
-          <h2 className="text-5xl font-bold mb-6">Ready to help?</h2>
-          <p className="text-xl mb-10 opacity-95 max-w-2xl mx-auto">Join our community and make a real difference in animals' lives.</p>
-          <Link
-            to="/register"
-            className="inline-block bg-white text-blue-600 px-12 py-4 rounded-full font-bold text-lg hover:bg-gray-100 transition"
-          >
-            Get Started Now
-          </Link>
         </div>
       </section>
     </div>

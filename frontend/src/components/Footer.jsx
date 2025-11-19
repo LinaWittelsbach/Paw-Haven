@@ -37,15 +37,12 @@ export default function Footer() {
             <div className="flex gap-6 text-4xl">
               <a href="#" className="hover:text-blue-300 transition">f</a>
               <a href="#" className="hover:text-blue-300 transition">𝕏</a>
-              <a href="#" className="hover:text-blue-300 transition">📷</a>
+              <a href="#" className="hover:text-blue-300 transition">📸</a>
             </div>
           </div>
         </div>
 
-        {/* Copyright */}
-        <div className="border-t border-blue-700 pt-10 text-center text-blue-300 text-lg">
-          <p>© {new Date().getFullYear()} Paw Haven. All rights reserved. Made with ❤️ for animals.</p>
-        </div>
+        <p className="text-center text-blue-300 text-sm">© 2025 Paw Haven. All rights reserved.</p>
       </div>
     </footer>
   );
